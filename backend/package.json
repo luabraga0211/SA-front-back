@@ -1,0 +1,29 @@
+{
+  "name": "api-node-3b",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js",
+    "start": "node --watch server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "postgres": "^3.4.4"
+  },
+  "description": "Para rodar o projeto, siga os passos abaixo:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luabraga0211/api-loja.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luabraga0211/api-loja/issues"
+  },
+  "homepage": "https://github.com/luabraga0211/api-loja#readme"
+}

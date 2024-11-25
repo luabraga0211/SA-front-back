@@ -1,0 +1,57 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/funcionarios
+
+###
+POST http://localhost:3333/funcionarios
+Content-Type: application/json
+
+{
+    "name": "JOAO",
+    "senha": "senha123"
+}
+
+###
+PUT http://localhost:3333/funcionarios/d87d2f02-aa5c-41d4-9cca-b901000d8620
+Content-Type: application/json
+
+{
+   "name": "JOAO ATUALIZADO",
+   "senha": "novaSenha123"
+}
+
+###
+
+DELETE http://localhost:3333/funcionarios/d87d2f02-aa5c-41d4-9cca-b901000d8620
+
+###
+
+
+
+
+                // ENDPOINTS ENTRADA E SAIDA
+GET http://localhost:3333/entradasaida
+
+###
+
+POST http://localhost:3333/entradasaida
+Content-Type: application/json
+
+{
+    "name": "JOAO",
+    "tipo": "entrada"
+}
+
+###
+PUT http://localhost:3333/entradasaida/d98fd6f4-8210-4291-924a-d1d83a7f5bba
+Content-Type: application/json
+
+{
+   "name": "JOAO ATUALIZADO",
+   "tipo": "saida"
+}
+
+###
+
+DELETE http://localhost:3333/entradasaida/d98fd6f4-8210-4291-924a-d1d83a7f5bba
