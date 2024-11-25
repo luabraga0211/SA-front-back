@@ -1,0 +1,120 @@
+.container {
+    width: 450px;
+    background-color: rgba(92, 92, 92, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px sold rgba(5, 4, 4, 0.2);
+    padding: 40px; 
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fcfcfc;
+}
+
+.container .input-campo {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-campo input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(87, 87, 87, 0.2);
+    border-radius: 40px; 
+    font-size: 13px;
+    padding: 20px 45px;
+}
+
+.input-campo input::placeholder {
+    color: #fff;
+}
+
+.input-campo .icon{
+    position: absolute;
+    right: 25px;
+    top: 30%;
+}
+
+.container .recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+.recall-forget label {
+    color: #fff;
+}
+
+.recall-forget input {
+    margin-right: 5px;
+}
+
+.recall-forget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recall-forget a:hover {
+    text-decoration: underline;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600px;
+    color:#000;
+    text-shadow: none;
+}
+
+.container .signup-link {
+    font-size: 13px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.signup-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+.signup-link p a:hover {
+    text-decoration: underline;
+  }
+  .signup-link p span {
+    color: rgb(255, 255, 255); /* Cor do link */
+    text-decoration: underline; /* Adiciona sublinhado */
+    cursor: pointer; /* Altera o cursor para o estilo de ponteiro */
+}
+
+.signup-link p span:hover {
+    text-decoration: none; /* Remove o sublinhado quando o mouse passa por cima */
+}
+
+.error-msg p {
+    color:red;
+    font-weight: bold;
+}
+
+.error-msg {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
