@@ -16,14 +16,13 @@ const Login = () => {
             return navigate("/iniciologado")
         }
         setErrorMessage("Credenciais inválidas")
-    }
+    };
 
 
     return (
         <div className="container">
             <form onSubmit={handleSubmit}>
-                <h1>Seja Bem Vindo(a) á ATSoluctions</h1> 
-                <br></br><p>Para começar, realize seu login de administrador.</p>
+                <h1>ATSoluctions</h1> 
                 <div className="input-campo">
                     <input type="name" placeholder="Coloque o seu nome" onChange={(e) => setName(e.target.value)} />
                     <FaUser className="icon" />

@@ -56,10 +56,6 @@ body {
     transition: color 0.3s ease;
 }
 
-.icons .icon:hover {
-    color: #4CAF50;
-}
-
 .formulario {
     background-color: #333;
     padding: 28px;

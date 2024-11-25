@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import {useState} from "react";
+import {useEffect} from "react";
 import './Cadastro.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faSignOutAlt, faList, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
