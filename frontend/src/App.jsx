@@ -3,7 +3,7 @@ import Login from './pages/Login/Login';
 import Inicio from './pages/Inicio/Inicio';
 import Iniciologado from './pages/Iniciologado/Iniciologado';
 import Cadastro from './pages/Cadastro/Cadastro';
-import Entradasaida from './pages/Entradasaida/Entradasaida/Entradasaida';
+import EntradaSaida from './pages/EntradaSaida/EntradaSaida';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
