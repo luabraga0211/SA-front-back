@@ -13,8 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "^9.0.1",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
+    "pg": "^8.13.1",
     "postgres": "^3.4.4"
   },
   "description": "Para rodar o projeto, siga os passos abaixo:",
