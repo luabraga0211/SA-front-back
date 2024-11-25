@@ -4,6 +4,7 @@ import Login from './pages/Login/Login';
 import Inicio from './pages/Inicio/Inicio';
 import Iniciologado from './pages/Iniciologado/Iniciologado';
 import Cadastro from './pages/Cadastro/Cadastro';
+import Controle from './pages/Controle/Controle';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/iniciologado' element={<Iniciologado />} />
       <Route path='/cadastro' element={<Cadastro />} />
+      <Route path='/controle' element={<Controle />} />
     </Routes>
     </BrowserRouter>
   )

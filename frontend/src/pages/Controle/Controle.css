@@ -1,0 +1,33 @@
+.controle-container {
+    background-color: #1c1c1c;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    width: 60%;
+}
+
+.controle-heading {
+    color: #ffffff;
+}
+
+.controle-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333333;
+}
+
+.controle-table th, .controle-table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    background-color: #808080;
+}
+
+.controle-table th {
+    background-color: #4d4d4d;
+}

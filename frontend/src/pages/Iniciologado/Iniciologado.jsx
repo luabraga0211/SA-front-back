@@ -11,7 +11,9 @@ const Iniciologado = () => {
                 <Link to="/cadastro">
                     <button>Ver Cadastros</button>
                 </Link>
+                <Link to="/controle">
                 <button>Controle de Entrada e Saída</button>
+                </Link>
             </div>
             <div className="icons">
                 <FontAwesomeIcon icon={faUser} className="icon" />

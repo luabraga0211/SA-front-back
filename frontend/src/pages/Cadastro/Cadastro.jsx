@@ -66,10 +66,11 @@ const Cadastro = () => {
                     Ver Cadastros
                     <FontAwesomeIcon icon={faList} />
                 </button>
-                <button onClick={() => { /* Adicione sua lógica de navegação aqui */ }}>
-                    Controle de Entrada e Saída
+                    <Link to="/controle">
+                   <button> Controle de Entrada e Saída
                     <FontAwesomeIcon icon={faSignInAlt} />
                 </button>
+                </Link>
                 <Link to="/iniciologado">
                     <button>Voltar Inicio
                         <FontAwesomeIcon icon={faList} />
