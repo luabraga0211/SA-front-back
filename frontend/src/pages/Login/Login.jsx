@@ -16,30 +16,24 @@ const Login = () => {
             return navigate("/iniciologado")
         }
         setErrorMessage("Credenciais inválidas")
-    };
+    }
+
 
     return (
         <div className="container">
             <form onSubmit={handleSubmit}>
-                <h1>ATSoluctions</h1> 
+                <h1>Seja Bem Vindo(a) á ATSoluctions</h1> 
+                <br></br><p>Para começar, realize seu login de administrador.</p>
                 <div className="input-campo">
-                    <input 
-                        type="text" 
-                        placeholder="Coloque o seu nome" 
-                        onChange={(e) => setName(e.target.value)} 
-                    />
-                    <FaUser  className="icon" />
+                    <input type="name" placeholder="Coloque o seu nome" onChange={(e) => setName(e.target.value)} />
+                    <FaUser className="icon" />
                 </div>
                 <div className="input-campo">
-                    <input 
-                        type="password" 
-                        placeholder="Coloque sua Senha" 
-                        onChange={(e) => setSenha(e.target.value)} 
-                    />
+                    <input type="password" placeholder="Coloque sua Senha" onChange={(e) => setSenha(e.target.value)} />
                     <FaLock className="icon" />
                 </div>
                 <div className="error-msg">
-                    {errorMessage && <p>{errorMessage}</p>}
+                {errorMessage && <p>{errorMessage}</p>}
                 </div>
                 <div className="recall-forget">
                     <label>

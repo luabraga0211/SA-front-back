@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from "react";
+import { useEffect } from "react";
 import axios from 'axios';
 import './Entradasaida.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +10,7 @@ const Entradasaida = () => {
     const [data, setData] = useState([]);
     const [name, setName] = useState('');
     const [tipo, setTipo] = useState('entrada');
+    const [isModalOpen, setIsModalOpen] = useState(false); // Adicionando estado para o modal
 
     useEffect(() => {
         const fetchData = async () => {
@@ -37,8 +39,8 @@ const Entradasaida = () => {
     };
 
     return (
-     <div>
-        <div className='navbar'>
+        <div>
+            <div className='navbar'>
                 <button onClick={() => setIsModalOpen(true)}>
                     Ver Cadastros
                     <FontAwesomeIcon icon={faList} />
@@ -59,42 +61,48 @@ const Entradasaida = () => {
                     <FontAwesomeIcon icon={faSignOutAlt} className="icon" />
                 </Link>
             </div>
-        <div className="container">
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Nome do Funcionário"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
-                <select value={tipo} onChange={(e) => setTipo(e.target.value)}>
-                    <option value="entrada">Entrada</option>
-                    <option value="saida">Saída</option>
-                </select>
-                <button type="submit">Registrar</button>
-            </form>
-            <h2>Entradas e Saídas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome do Funcionário</th>
-                        <th>Data</th>
-                        <th>Tipo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {data.map((item, index) => (
-                        <tr key={index}>
-                            <td>{item.name}</td>
-                            <td>{new Date(item.data).toLocaleString()}</td>
-                            <td>{item.tipo}</td>
+            <div className="container">
+                <form onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Nome do Funcionário"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
+                    <select value={tipo} onChange={(e) => setTipo(e.target.value)}>
+                        <option value="entrada">Entrada</option>
+                        <option value="saida">Saída</option>
+                    </select>
+                    <button type="submit">Registrar</button>
+                </form>
+                <h2>Entradas e Saídas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Funcionário</th>
+                            <th>Data</th>
+                            <th>Tipo</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {data.map((item, index) => (
+                            <tr key={index}>
+                                <td>{item.name}</td>
+                                <td>{new Date(item.data).toLocaleString()}</td>
+                                <td>{item.tipo}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+            {isModalOpen && (
+                <div className="modal">
+                    {/* Aqui você pode adicionar o conteúdo do modal */}
+                    <button onClick={() => setIsModalOpen(false)}>Fechar</button>
+                </div>
+            )}
         </div>
-    </div>
     );
 }
 
