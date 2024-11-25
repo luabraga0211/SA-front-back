@@ -1,73 +1,95 @@
+/* Estilos para o corpo da página */
 body {
-    background-color: #333;
-    color: #ccc;
-    font-family: 'Roboto', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  .topo {
-    text-align: left;
-    max-width: 800px;
-    padding: 20px;
-    position: relative;
-  }
-  .botao-funcao {
-    background-color: #666;
-    color: #ccc;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-  .botao-funcao:hover {
-    background-color: #555;
-  }
-  .conteudo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 60px;
-  }
-  .text {
-    max-width: 400px;
-    margin-right: 40px;
-  }
-  .logo {
-    margin-top: 70px;
-    margin-left: 50px;
-    max-width: 300px;
-  }
-  .logo img {
-    width: 100%;
-  }
-  .botaofuncao2 {
-    background-color: #666;
-    color: #ccc;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-  .botaofuncao2:hover {
-    background-color: #555;
-  }
-  .footer-text {
-    font-size: 12px;
-    margin-top: 10px;
-    text-align: left;
-  }
+  background-color: #333;  /* Cor de fundo do site */
+  color: #ccc;  /* Cor do texto na body só que é o corpo inteiro do codigo */
+  font-family: 'Roboto', Arial, sans-serif;  /* Estilo da fonte das letras */
+  display: flex;  /* layout flexível */
+  justify-content: center;  /* Centralizazão */
+  align-items: center;  /* Centralização */
+  height: 100vh;  /* Altura */
+  margin: 0;  /* Remove margens padrão por isso 0 */
+}
 
-  .link {
-    text-decoration: none;
-  }
+/* Estilos para o topo */
+.topo {
+  text-align: left;  /* Alinha os textos na esquerda */
+  max-width: 800px;  /* Largura máxima dessa divisória pra ela nao ficar mto fina */
+  padding: 20px;  /* Espaçamento interno entre os a divisoria com as outras */
+  position: relative;  /* Posição vai ser relativa baseado no computador que acessar */
+}
+
+/* Estilos para o botão de função */
+.botao-funcao {
+  background-color: #666;  /* Cor de fundo do botao*/
+  color: #ccc;  /* Cor do texto do botao */
+  border: none;  /* Sem borda nesse botao */
+  padding: 10px 20px;  /* Espaçamento interno do botao */
+  cursor: pointer;  /* Cursor ao passar por cima fica em formato de ponteiro */
+  position: absolute;  /* Posição absoluta */
+  top: 100px;  /* Distância do topo */
+  right: 20px;  /* Distância da direita */
+  border-radius: 5px;  /* Borda arredondada pra estilizar */
+  transition: background-color 0.3s ease;  /* Transição suave nas cores pra ficar mudando de cor quando passar o mouse encima */
+  text-decoration: none;  /* Sem decoração de texto tipo linha em baixo e etc */
+}
+
+/* Efeito de hover para o botão de função */
+.botao-funcao:hover {
+  background-color: #555;  /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos para o conteúdo, que é a div que possui os textos do site */
+.conteudo {
+  display: flex;  /* Utiliza um layout flexível */
+  align-items: flex-start;  /* Alinha itens no topo */
+  justify-content: space-between;  /* Espaço entre os textos e etc */
+  margin-top: 60px;  /* Margem superior encima pra nao ficar mto encima */
+}
+
+/* Estilos para o texto */
+.text {
+  max-width: 400px;  /* Largura máxima */
+  margin-right: 40px;  /* Margem à direita pra nao ficar tao pro lado */
+}
+
+/* Estilos para o logo */
+.logo {
+  margin-top: 70px;  /* Margem superior */
+  margin-left: 50px;  /* Margem à esquerda */
+  max-width: 300px;  /* Largura máxima */
+}
+
+/* Estilos para a imagem do logo */
+.logo img {
+  width: 100%;  /* Largura total que a logo pode ter */
+}
+
+/* Estilos para o segundo botão de função, mesma coisa que a outra. */
+.botaofuncao2 {
+  background-color: #666;  /* Cor de fundo */
+  color: #ccc;  /* Cor do texto */
+  border: none;  /* Sem borda */
+  padding: 10px 20px;  /* Espaçamento interno */
+  cursor: pointer;  /* Cursor ao passar por cima */
+  margin-top: 20px;  /* Margem superior */
+  border-radius: 5px;  /* Borda arredondada */
+  transition: background-color 0.3s ease;  /* Transição suave */
+  text-decoration: none;  /* Sem decoração de texto */
+}
+
+/* Efeito de hover para o segundo botão de função, mesma coisa que o outro */
+.botaofuncao2:hover {
+  background-color: #555;  /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos para o texto pequeno */
+.footer-text {
+  font-size: 12px;  /* Tamanho da fonte */
+  margin-top: 10px;  /* Margem superior */
+  text-align: left;  /* Alinhamento à esquerda */
+}
+
+/* Estilos para links */
+.link {
+  text-decoration: none;  /* Sem decoração de link apenas o texto*/
+}
