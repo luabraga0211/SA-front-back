@@ -8,7 +8,7 @@ const sql = postgres({
   database: PGDATABASE,
   username: PGUSER,
   password: PGPASSWORD,
-  port: 5433,
+  port: 5432,
   ssl: false,
 });
 
