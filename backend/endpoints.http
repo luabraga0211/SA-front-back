@@ -44,14 +44,14 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3333/entradasaida/d98fd6f4-8210-4291-924a-d1d83a7f5bba
+PUT http://localhost:3333/entradasaida/6693cf95-3558-4b95-8de0-22fc74197c20
 Content-Type: application/json
 
 {
    "name": "JOAO ATUALIZADO",
-   "tipo": "saida"
+   "tipo": "entrada"
 }
 
 ###
 
-DELETE http://localhost:3333/entradasaida/d98fd6f4-8210-4291-924a-d1d83a7f5bba
+DELETE http://localhost:3333/entradasaida/f2e9fc99-dbcc-4588-8523-976b493f1a76
