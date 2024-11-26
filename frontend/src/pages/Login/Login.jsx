@@ -11,7 +11,8 @@ const Login = () => {
     
     const navigate = useNavigate()
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         if (name === "admin" && senha === "admin@123") {
             return navigate("/iniciologado")
         }
