@@ -42,7 +42,7 @@ export class DatabasePostgres {
 
   // CRUD DE ENTRADA E SAIDA
   async listEntradaSaida() {
-    const entradaSaida = await sql`SELECT * FROM EntradaSaida`;
+    const entradaSaida = await sql`SELECT * FROM EntradaSaida ORDER BY name ASC`;
     return entradaSaida;
   }
 
@@ -55,10 +55,9 @@ export class DatabasePostgres {
   }
 
   async updateEntradaSaida(idEntradaSaida, entradaSaida) {
-    const { name, tipo } = entradaSaida;
+    const { tipo } = entradaSaida;
 
     await sql`UPDATE EntradaSaida SET 
-        name = ${name},
         tipo = ${tipo}
         WHERE idEntradaSaida = ${idEntradaSaida}
     `;

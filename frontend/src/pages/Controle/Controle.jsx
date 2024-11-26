@@ -20,7 +20,7 @@ const Controle = () => {
             console.error('Erro ao buscar dados:', error);
         }
     };
-    console.log(data)
+
     const deleteEntradaSaida = async (idEntradaSaida) => {
         try {
             await axios.delete(`http://localhost:3333/entradasaida/${idEntradaSaida}`);
@@ -30,9 +30,10 @@ const Controle = () => {
         }
     };
 
-    const alterarTipo = async (idEntradaSaida, novoTipo) => {
+    const alterarTipo = async (idEntradaSaida, tipo) => {
         try {
-            await axios.put(`http://localhost:3333/entradasaida/${idEntradaSaida}`, { tipo: novoTipo });
+            const novoTipo = tipo === 'entrada' ? 'saida' : 'entrada';
+            await axios.patch(`http://localhost:3333/entradasaida/${idEntradaSaida}`, { tipo: novoTipo });
             fetchData(); // Atualiza a lista após a alteração
         } catch (error) {
             console.error('Erro ao alterar tipo:', error);
@@ -82,7 +83,7 @@ const Controle = () => {
                                 <td>{new Date(item.data).toLocaleString()}</td>
                                 <td>{item.tipo}</td>
                                 <td>
-                                    <button onClick={() => alterarTipo(item.identradasaida, data.tipo === 'entrada' ? 'saida' : 'entrada')}>
+                                    <button onClick={() => alterarTipo(item.identradasaida, item.tipo)}>
                                         <FontAwesomeIcon icon={faEdit} />
                                     </button>
                                     <button onClick={() => deleteEntradaSaida(item.identradasaida)}>

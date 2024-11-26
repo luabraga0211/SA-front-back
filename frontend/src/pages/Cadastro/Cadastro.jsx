@@ -19,7 +19,7 @@ const Cadastro = () => {
         try {
             if (funcionarioEditando) {
                 // Atualiza funcionário existente
-                await axios.put(`http://localhost:3333/funcionarios/${funcionarioEditando.matricula}`, novoFuncionario);
+                await axios.patch(`http://localhost:3333/funcionarios/${funcionarioEditando.matricula}`, novoFuncionario);
                 setFuncionarioEditando(null); // Limpa o estado de edição
             } else {
                 // Cria novo funcionário

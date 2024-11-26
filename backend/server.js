@@ -8,7 +8,7 @@ const databasePostgres = new DatabasePostgres();
 // CORS
 server.register(cors, {
     origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
+    methods: ['GET', 'POST', 'PATCH', 'DELETE']
 });
 
 // ENDPOINTS (CRUD) DE FUNCIONARIOS:
@@ -35,7 +35,7 @@ server.get('/funcionarios', async () => {
 });
 
 // UPDATE
-server.put('/funcionarios/:matricula', async (request, reply) => {
+server.patch('/funcionarios/:matricula', async (request, reply) => {
     try {
         const funcionariosID = request.params.matricula;
         const body = request.body;
@@ -81,7 +81,7 @@ server.get('/entradasaida', async () => {
 });
 
 // UPDATE
-server.put('/entradasaida/:idEntradaSaida', async (request, reply) => {
+server.patch('/entradasaida/:idEntradaSaida', async (request, reply) => {
     try {
         const entradaSaidaID = request.params.idEntradaSaida;
         const body = request.body;
