@@ -19,10 +19,10 @@ APÓS FAZER TODAS AS INSTALAÇÕES, INICIE O PROJETO UTILIZANDO RUN DEV
 NA NOSSA APRESENTAÇÃO, SERÁ DIVIDIDO EM PARTES ONDE CADA UM IRÁ APRESENTAR ALGO
 
 1. Inicio, (Lucas Rodrigues),
-2. Login, (Lua Braga),
+2. Login, (Felipe Pontes),
 3. InicioLogado, (Vitor Soligo),
-4. Cadastro, (NULL),
-5. EntradaSaida, (NULL),
+4. Cadastro, (Luã Sergio),
+5. EntradaSaida, (Victor Fernandes),
 
 
 NO BACK END SERÁ NECESSARIO AS MESMAS INSTALAÇÕES, RETIRANDO AS INSTALAÇÕES RELACIONADAS A REACT, QUE SERIAM:

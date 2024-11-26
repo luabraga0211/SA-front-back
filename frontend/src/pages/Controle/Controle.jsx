@@ -15,7 +15,7 @@ const Controle = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get('http://localhost:3333/entradasaida');
-            setData(response.data);
+            setData(response.data); // Recebe os dados do banco de dados e atualiza a lista de entrada/saida
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
         }
