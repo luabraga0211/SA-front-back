@@ -34,3 +34,12 @@ PARA COMEÇAR, UTILIZE O COMANDO START (LEMBRE DE UTILIZAR, POIS SE NÃO DER O S
 
 1. npm start
 
+ALGUNS LINKS QUE UTILIZAMOS PARA OS ESTUDOS PARA REALIZAR A NOSSA S.A
+https://axios-http.com/ptbr/docs/example 
+ALGUNS COMANDOS E EXEMPLOS PARA VERMOS A INTEGRAÇAO DO BANCO DE DADOS COM O FRONT END
+
+FUNÇAO useNavigate para fazer as rotas entre paginas no projeto
+https://api.reactrouter.com/v7/functions/react_router.useNavigate.html
+
+Utilizamos Também a função Link:
+https://api.reactrouter.com/v7/functions/react_router.Link.html
